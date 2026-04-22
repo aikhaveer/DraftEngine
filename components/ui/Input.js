@@ -12,7 +12,7 @@ const Input = forwardRef(function Input(
   return (
     <div className="flex flex-col gap-1.5">
       {label && (
-        <label htmlFor={inputId} className="text-sm font-medium text-gray-700">
+        <label htmlFor={inputId} className="text-sm font-medium text-gray-300">
           {label}
         </label>
       )}
@@ -21,8 +21,8 @@ const Input = forwardRef(function Input(
         id={inputId}
         type={type}
         className={cn(
-          'flex h-10 w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm',
-          'placeholder:text-gray-400',
+          'flex h-10 w-full rounded-md border border-gray-700 bg-gray-800 px-3 py-2 text-sm text-gray-100',
+          'placeholder:text-gray-500',
           'focus:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500',
           'disabled:cursor-not-allowed disabled:opacity-50',
           error && 'border-red-500 focus:ring-red-500',
@@ -38,7 +38,7 @@ const Input = forwardRef(function Input(
         </p>
       )}
       {hint && !error && (
-        <p id={`${inputId}-hint`} className="text-sm text-gray-500">
+        <p id={`${inputId}-hint`} className="text-sm text-gray-400">
           {hint}
         </p>
       )}

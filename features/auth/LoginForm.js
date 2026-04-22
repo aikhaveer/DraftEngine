@@ -37,7 +37,7 @@ export default function LoginForm() {
     setFieldErrors({});
     try {
       await login(form);
-      router.push('/dashboard');
+      router.push('/');
     } catch {
       // surfaced via AuthContext.error
     }
