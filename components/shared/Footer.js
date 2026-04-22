@@ -1,24 +1,12 @@
-import Link from 'next/link';
 import { siteConfig } from '@/config/site';
 
 export default function Footer() {
   return (
-    <footer className="border-t border-gray-200 bg-white">
-      <div className="container flex flex-col items-center justify-between gap-4 py-8 sm:flex-row">
-        <p className="text-sm text-gray-500">
+    <footer className="border-t border-gray-800 bg-gray-900">
+      <div className="container flex items-center justify-center py-8">
+        <p className="text-sm text-gray-400">
           &copy; {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
         </p>
-        <nav className="flex gap-6">
-          {siteConfig.footerLinks.map(({ href, label }) => (
-            <Link
-              key={href}
-              href={href}
-              className="text-sm text-gray-500 transition-colors hover:text-gray-900"
-            >
-              {label}
-            </Link>
-          ))}
-        </nav>
       </div>
     </footer>
   );

@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 
-const PROTECTED_ROUTES = ['/dashboard'];
+const PROTECTED_ROUTES = [];
 const AUTH_ROUTES = ['/login', '/register'];
 
 export function middleware(request) {
@@ -20,7 +20,7 @@ export function middleware(request) {
   }
 
   if (isAuthRoute && token) {
-    return NextResponse.redirect(new URL('/dashboard', request.url));
+    return NextResponse.redirect(new URL('/', request.url));
   }
 
   return NextResponse.next();
