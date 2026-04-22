@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"C:/Users/Khaveer Narsai/Desktop/Claude/DraftEngine/.claude/commands\")",
+      "Bash(cp \"C:/Users/Khaveer Narsai/Desktop/Claude/.claude/commands/\"*.md \"C:/Users/Khaveer Narsai/Desktop/Claude/DraftEngine/.claude/commands/\")",
+      "Bash(git *)"
+    ]
+  }
+}
