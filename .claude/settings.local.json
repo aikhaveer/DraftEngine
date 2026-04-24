@@ -5,7 +5,8 @@
       "Bash(cp \"C:/Users/Khaveer Narsai/Desktop/Claude/.claude/commands/\"*.md \"C:/Users/Khaveer Narsai/Desktop/Claude/DraftEngine/.claude/commands/\")",
       "Bash(git *)",
       "Bash(npm run *)",
-      "Bash(netstat -ano)"
+      "Bash(netstat -ano)",
+      "Bash(gh pr *)"
     ]
   }
 }
