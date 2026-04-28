@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(dir /a \"C:\\\\Users\\\\Khaveer Narsai\\\\Desktop\\\\Claude\\\\DraftEngine\")",
-      "Bash(git commit -m ' *)"
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)"
     ]
   }
 }
